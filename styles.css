@@ -142,6 +142,20 @@ body {
     border-radius: var(--radius-sm);
 }
 
+.contact-link {
+    background: var(--accent-gradient) !important;
+    color: var(--text-inverse) !important;
+    border-radius: var(--radius-lg) !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.contact-link:hover {
+    background: var(--primary-gradient) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -772,6 +786,33 @@ body {
 .footer-logo p {
     color: #94a3b8;
     font-size: 0.9rem;
+}
+
+.footer-contact {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #334155;
+}
+
+.contact-label {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.footer-email {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-email:hover {
+    color: var(--primary-color);
+    transform: translateY(-1px);
 }
 
 .footer-links {
