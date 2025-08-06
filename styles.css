@@ -660,6 +660,20 @@ body {
     font-size: 0.95rem;
 }
 
+.founder-school {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.founder-school strong {
+    font-weight: 700;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Our Story Section */
 .our-story {
     padding: 80px 0;
