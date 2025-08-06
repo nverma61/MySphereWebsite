@@ -484,10 +484,121 @@ body {
     color: #64748b;
 }
 
+/* Who We Serve Section */
+.who-we-serve {
+    padding: 100px 0;
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.who-we-serve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.who-we-serve-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.who-we-serve h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.who-we-serve > .container > .who-we-serve-content > p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.definitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.definition-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    padding: 2.5rem;
+    border-radius: var(--radius-2xl);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.definition-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.definition-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-2xl);
+}
+
+.definition-card:hover::before {
+    transform: scaleX(1);
+}
+
+.definition-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.definition-card:nth-child(2) .definition-icon {
+    animation-delay: -2s;
+}
+
+.definition-card:nth-child(3) .definition-icon {
+    animation-delay: -4s;
+}
+
+.definition-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.definition-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
 /* Mission Section */
 .mission {
     padding: 80px 0;
-    background: #f8fafc;
+    background: var(--bg-primary);
 }
 
 .mission-content {
@@ -958,7 +1069,8 @@ body {
 
     .features-grid,
     .founders-grid,
-    .values-grid {
+    .values-grid,
+    .definitions-grid {
         grid-template-columns: 1fr;
     }
 
