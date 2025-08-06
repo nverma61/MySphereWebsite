@@ -86,4 +86,4 @@ To update the form links, you can either:
 
 ## Contact
 
-Built for Naman Verma (CEO) and Aarushi (COO) - MySphere co-founders 
+Built for Naman Verma (CEO) and Aarushi (COO) - MySphere co-founders
