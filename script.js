@@ -46,23 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Handle image loading for founder photos
-    const founderImages = document.querySelectorAll('.founder-image img');
-    founderImages.forEach(img => {
-        img.addEventListener('load', function() {
-            this.style.display = 'block';
-            this.parentElement.querySelector('.image-placeholder').style.display = 'none';
-        });
-
-        img.addEventListener('error', function() {
-            // Keep placeholder visible if image fails to load
-            this.style.display = 'none';
-        });
-    });
-
-    // Handle image loading for team member photos
-    const teamImages = document.querySelectorAll('.team-image img');
-    teamImages.forEach(img => {
+    // Handle image loading for all team member photos (founders and interns)
+    const allTeamImages = document.querySelectorAll('.founder-image img, .team-image img');
+    allTeamImages.forEach(img => {
         img.addEventListener('load', function() {
             this.style.display = 'block';
             this.parentElement.querySelector('.image-placeholder').style.display = 'none';
