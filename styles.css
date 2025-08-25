@@ -714,9 +714,9 @@ body {
 
 .interns-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
