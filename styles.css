@@ -716,8 +716,10 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
+    justify-items: center;
+    align-items: start;
 }
 
 .founder-card {
@@ -727,6 +729,12 @@ body {
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 240px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .founder-card:hover {
