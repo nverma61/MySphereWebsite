@@ -60,6 +60,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Handle image loading for team member photos
+    const teamImages = document.querySelectorAll('.team-image img');
+    teamImages.forEach(img => {
+        img.addEventListener('load', function() {
+            this.style.display = 'block';
+            this.parentElement.querySelector('.image-placeholder').style.display = 'none';
+        });
+
+        img.addEventListener('error', function() {
+            // Keep placeholder visible if image fails to load
+            this.style.display = 'none';
+            this.parentElement.querySelector('.image-placeholder').style.display = 'flex';
+        });
+    });
+
     // Handle image loading for app screenshots
     const appScreenImages = document.querySelectorAll('.app-screen img');
     appScreenImages.forEach(img => {
