@@ -3,196 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySphere - AI-Powered Senior Companion Connections</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MySphere — Companionship for older adults, matched by voice</title>
+    <meta name="description" content="MySphere pairs adults 55+ with trusted local companions for walks, conversation, and everyday errands. Sonia, our multilingual voice assistant, gets to know them first.">
+    <meta property="og:title" content="MySphere — Someone to walk with on Tuesday">
+    <meta property="og:description" content="Companionship for older adults, matched by a voice assistant that speaks their language.">
+    <meta property="og:image" content="images/app-screen-2.png">
+    <link rel="icon" href="images/MySphereLogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/MySphereLogo.png" alt="MySphere Logo" class="logo-image">
-                <h2>MySphere</h2>
-            </div>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="#opportunities" class="nav-link">Get Involved</a>
-                <a href="mailto:founders@mysphereai.com" class="nav-link contact-link">Contact</a>
-            </div>
+    <header class="nav" id="nav">
+        <div class="wrap nav-inner">
+            <a href="index.html" class="brand" aria-label="MySphere home">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-name">MySphere</span>
+            </a>
+            <nav class="nav-links" id="nav-links" aria-label="Primary">
+                <a href="#how">How it works</a>
+                <a href="#sonia">Sonia</a>
+                <a href="#who">Who it's for</a>
+                <a href="mailto:founders@mysphereai.com">Contact</a>
+            </nav>
+            <a href="#join" class="btn btn-ink btn-sm nav-cta">Join the waitlist</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span>
+            </button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">MySphere</h1>
-                <p class="hero-subtitle">MySphere is an AI-powered app that connects senior citizens to carefully matched companions for meaningful in-person support.</p>
-                <div class="hero-buttons">
-                    <a href="#opportunities" class="btn btn-primary">Join Our Waitlist</a>
-                    <a href="#mission" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">💙</div>
-                    <h3>Ease Stress</h3>
-                    <p>Our app helps reduce caregiver burnout through supportive resources and community connection.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Foster Bonds</h3>
-                    <p>Promote meaningful interaction between seniors and companions to enhance emotional well-being.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌱</div>
-                    <h3>Encourage Growth</h3>
-                    <p>Empower individuals to develop personal skills and overcome challenges together.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Features Section -->
-    <section class="app-features">
-        <div class="container">
-            <div class="app-features-content">
-                <h2>Experience MySphere</h2>
-                <p>See how our AI-powered app makes connecting seniors and companions simple and meaningful</p>
-                
-                <div class="app-showcase">
-                    <div class="app-feature-item">
-                        <div class="app-screen">
-                            <img src="images/app-screen-1.png" alt="MySphere senior onboarding and interests" />
-                            <div class="screen-placeholder">
-                                <span>Senior Onboarding Screen</span>
-                            </div>
-                        </div>
-                        <div class="app-feature-text">
-                            <h3>Personalized Onboarding</h3>
-                            <p>Seniors share their interests, hobbies, and preferences to help us understand who they are and what kind of companionship they're looking for.</p>
-                        </div>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow reveal">Companionship for adults 55+</p>
+                    <h1 class="hero-title reveal">Someone to walk with <em>on&nbsp;Tuesday.</em></h1>
+                    <p class="hero-sub reveal">
+                        MySphere pairs older adults with trusted local companions for walks, conversation, and everyday errands.
+                        Before anyone is matched, our voice assistant Sonia gets to know them in their own language, so the first visit doesn't feel like a stranger at the door.
+                    </p>
+                    <div class="hero-actions reveal">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMC_lwJSTKSxN5n55QUtIfNvZHoX7qW7DB_FPXK-DQ3oRoMg/viewform?usp=header" class="btn btn-ink" target="_blank" rel="noopener">Join the waitlist <span aria-hidden="true">→</span></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-qizxFooj4OfGZgbGM8Fypb4QJnuCMsX4HYM6Ju5f_6hLnw/viewform?usp=preview" class="btn btn-ghost" target="_blank" rel="noopener">Become a companion</a>
                     </div>
+                    <p class="hero-note reveal">For seniors, the families who worry about them, and the neighbors who want to help.</p>
+                </div>
 
-                    <div class="app-feature-item reverse">
-                        <div class="app-screen">
-                            <img src="images/app-screen-2.png" alt="Sonia AI Assistant" />
-                            <div class="screen-placeholder">
-                                <span>AI Assistant Sonia Screen</span>
-                            </div>
-                        </div>
-                        <div class="app-feature-text">
-                            <h3>Meet Sonia: Your Multilingual AI Assistant</h3>
-                            <p>Sonia is our voice AI assistant who speaks with seniors in their preferred language, understanding their unique needs, preferences, and personality to recommend the perfect companion match. This thoughtful approach improves seniors' well-being while easing the burden on their caregivers.</p>
-                        </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orb"></div>
+                    <figure class="phone phone-back phone-left">
+                        <img src="images/app-screen-1.png" alt="" class="shot shot-1">
+                    </figure>
+                    <figure class="phone phone-back phone-right">
+                        <img src="images/app-screen-3.png" alt="" class="shot shot-3">
+                    </figure>
+                    <figure class="phone phone-front">
+                        <img src="images/app-screen-2.png" alt="" class="shot shot-2">
+                    </figure>
+                    <div class="bubble bubble-1">
+                        <span class="bubble-who">Sonia</span>
+                        “What does a good Sunday look like for you?”
                     </div>
-
-                    <div class="app-feature-item">
-                        <div class="app-screen">
-                            <img src="images/app-screen-3.png" alt="Companion matching interface" />
-                            <div class="screen-placeholder">
-                                <span>Companion Matching Screen</span>
-                            </div>
-                        </div>
-                        <div class="app-feature-text">
-                            <h3>Companion Matching & Service Requesting</h3>
-                            <p>Request services and get matched with companions- whether it's for a walk, a chat, or help with errands.</p>
-                        </div>
+                    <div class="bubble bubble-2">
+                        <span class="bubble-who">Rosa, 78</span>
+                        “Mass, then a long walk, then my telenovela.”
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Who We Serve Section -->
-    <section class="who-we-serve">
-        <div class="container">
-            <div class="who-we-serve-content">
-                <h2>Who We Serve</h2>
-                <p>MySphere brings together three important groups in our community to create meaningful connections and support networks.</p>
-                
-                <div class="definitions-grid">
-                    <div class="definition-card">
-                        <div class="definition-icon">👥</div>
-                        <h3>Seniors</h3>
-                        <p>Adults aged 55 and older who are looking for companionship, social connection, and support with daily activities to enhance their quality of life and well-being.</p>
+        <!-- Problem -->
+        <section class="problem">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">The problem</p>
+                    <h2 class="h2 reveal">Loneliness isn't a mood. <em>It's a health risk</em>, and it usually lands on the family.</h2>
+                </div>
+                <div class="stats">
+                    <div class="stat reveal">
+                        <p class="stat-num">1 in 4</p>
+                        <p class="stat-label">adults 65 and older in the U.S. are socially isolated.</p>
+                        <p class="stat-src">National Academies of Sciences, 2020</p>
                     </div>
-                    
-                    <div class="definition-card">
-                        <div class="definition-icon">❤️</div>
-                        <h3>Caregivers</h3>
-                        <p>Family members and loved ones who are close to seniors - including children, grandchildren, spouses, and relatives. MySphere helps reduce caregiver burnout and stress by providing additional support networks for their seniors.</p>
+                    <div class="stat reveal">
+                        <p class="stat-num">15<span class="stat-unit">cigs/day</span></p>
+                        <p class="stat-label">That's the mortality risk of chronic social disconnection, on par with smoking.</p>
+                        <p class="stat-src">U.S. Surgeon General Advisory, 2023</p>
                     </div>
-                    
-                    <div class="definition-card">
-                        <div class="definition-icon">🤝</div>
-                        <h3>Companions</h3>
-                        <p>Friendly, trusted individuals (18+) who spend time with older adults - whether through conversation, activities, or offering help with simple tasks. Companions help reduce loneliness and build meaningful connections in their community!</p>
+                    <div class="stat reveal">
+                        <p class="stat-num">53M</p>
+                        <p class="stat-label">Americans are unpaid family caregivers, most of them also working jobs.</p>
+                        <p class="stat-src">AARP &amp; National Alliance for Caregiving, 2020</p>
                     </div>
                 </div>
+                <p class="problem-kicker reveal">
+                    Most products built for this put another screen in front of someone who's already alone.
+                    <strong>Ours ends with a person on the porch.</strong>
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Mission Section -->
-    <section id="mission" class="mission">
-        <div class="container">
-            <div class="mission-content">
-                <h2>Our Mission</h2>
-                <p>MySphere is designed to alleviate senior loneliness and caregiver burnout through fostering compassionate connections. Our mission is to provide essential support and encourage growth, creating an environment where seniors thrive emotionally and socially.</p>
+        <!-- How it works -->
+        <section class="how" id="how">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">How it works</p>
+                    <h2 class="h2 reveal">From hello to a first visit, <em>in three steps.</em></h2>
+                </div>
+
+                <ol class="steps">
+                    <li class="step reveal">
+                        <div class="step-media">
+                            <img src="images/app-screen-1.png" alt="MySphere onboarding: senior selects interests like music, cooking, and casual walking" class="shot shot-1" loading="lazy">
+                        </div>
+                        <div class="step-copy">
+                            <span class="step-num">01</span>
+                            <h3>Tell us what a good day looks like.</h3>
+                            <p>Big, tappable chips instead of forms: music, cooking, casual walking, group meets, getting snacks. A senior (or their daughter, sitting next to them) can finish it in a couple of minutes.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <div class="step-media">
+                            <img src="images/app-screen-2.png" alt="Sonia, MySphere's voice assistant, introduces herself with a Get Started microphone button" class="shot shot-2" loading="lazy">
+                        </div>
+                        <div class="step-copy">
+                            <span class="step-num">02</span>
+                            <h3>Have a real conversation with Sonia.</h3>
+                            <p>One button, then just talk. Sonia asks about routines, mobility, the language they're most at home in, and what they miss doing. That conversation tells us far more than a checkbox ever could.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <div class="step-media">
+                            <img src="images/app-screen-3.png" alt="Matches screen showing three nearby companion profiles with age, city, and languages" class="shot shot-3" loading="lazy">
+                        </div>
+                        <div class="step-copy">
+                            <span class="step-num">03</span>
+                            <h3>Meet a companion who actually fits.</h3>
+                            <p>We surface a short list of nearby companions with the languages, experience, and interests that line up. Then you request a walk, a visit, or help with an errand, and they show up in person.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Opportunities Section -->
-    <section id="opportunities" class="opportunities">
-        <div class="container">
-            <div class="opportunities-content">
-                <h2>Opportunities</h2>
-                <p>Interested in joining our waitlist or becoming a companion?</p>
-                <div class="opportunities-buttons">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMC_lwJSTKSxN5n55QUtIfNvZHoX7qW7DB_FPXK-DQ3oRoMg/viewform?usp=header" class="btn btn-primary" id="waitlist-btn" target="_blank">Join Our Waitlist</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-qizxFooj4OfGZgbGM8Fypb4QJnuCMsX4HYM6Ju5f_6hLnw/viewform?usp=preview" class="btn btn-primary" id="companion-btn" target="_blank">Become a Companion</a>
+        <!-- Sonia -->
+        <section class="sonia" id="sonia">
+            <div class="wrap sonia-grid">
+                <div class="sonia-intro">
+                    <p class="eyebrow eyebrow-light">Meet Sonia</p>
+                    <h2 class="h2 reveal">We made the first step <em>a conversation</em>, not a form.</h2>
+                    <p class="reveal">Onboarding is where most apps lose older users: tiny text fields, passwords, ten screens of dropdowns. So we replaced it with a voice. Sonia is the part of MySphere that listens.</p>
+                </div>
+                <ul class="principles">
+                    <li class="reveal">
+                        <h3>Speaks their language</h3>
+                        <p>A grandmother who's lived here thirty years may still think in Spanish, Hindi, or Mandarin. Sonia meets her there, and that preference carries straight into matching.</p>
+                    </li>
+                    <li class="reveal">
+                        <h3>Hears what forms miss</h3>
+                        <p>“I like walking, but my knee is bad on hills.” “My husband passed last spring.” The details that make or break a match come up naturally when someone is talking.</p>
+                    </li>
+                    <li class="reveal">
+                        <h3>Hands off to a human</h3>
+                        <p>Sonia isn't the companion. She's the intake. The goal of every conversation is a real person showing up at the door.</p>
+                    </li>
+                    <li class="reveal">
+                        <h3>Keeps family in the loop</h3>
+                        <p>The adult kid three time zones away gets to know someone is stopping by, without having to coordinate every visit themselves.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Who it's for -->
+        <section class="who" id="who">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow">Who it's for</p>
+                    <h2 class="h2 reveal">Three people, <em>one relationship.</em></h2>
+                </div>
+                <div class="who-grid">
+                    <article class="who-card reveal">
+                        <p class="who-tag">Seniors · 55+</p>
+                        <h3>A regular face, not a rotating stranger.</h3>
+                        <p>Someone to walk the neighborhood with, play cards, cook a recipe from home, or just sit and talk. Same companion, week after week.</p>
+                    </article>
+                    <article class="who-card reveal">
+                        <p class="who-tag">Families &amp; caregivers</p>
+                        <h3>One less thing you're carrying alone.</h3>
+                        <p>For the son juggling work and Dad's appointments, or the daughter who calls every night because she worries. Real company for them, and some breathing room for you.</p>
+                    </article>
+                    <article class="who-card reveal">
+                        <p class="who-tag">Companions · 18+</p>
+                        <h3>A few hours a week that actually matter.</h3>
+                        <p>Students, retirees, and neighbors who are good with people. Pick times that fit your schedule and become someone's favorite part of the week.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- Activities marquee -->
+        <section class="marquee" aria-label="Things companions do">
+            <div class="marquee-track">
+                <span>Morning walks</span><span>Chai &amp; conversation</span><span>Grocery runs</span><span>Board games</span><span>Cooking a family recipe</span><span>Watching the game</span><span>Music</span><span>Group meetups</span><span>Reading together</span><span>Getting snacks</span>
+                <span aria-hidden="true">Morning walks</span><span aria-hidden="true">Chai &amp; conversation</span><span aria-hidden="true">Grocery runs</span><span aria-hidden="true">Board games</span><span aria-hidden="true">Cooking a family recipe</span><span aria-hidden="true">Watching the game</span><span aria-hidden="true">Music</span><span aria-hidden="true">Group meetups</span><span aria-hidden="true">Reading together</span><span aria-hidden="true">Getting snacks</span>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="join" id="join">
+            <div class="wrap">
+                <h2 class="join-title reveal">Pick a side of the <em>porch.</em></h2>
+                <div class="join-grid">
+                    <a class="join-card join-card-rose reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSeMC_lwJSTKSxN5n55QUtIfNvZHoX7qW7DB_FPXK-DQ3oRoMg/viewform?usp=header" target="_blank" rel="noopener">
+                        <p class="join-tag">For seniors &amp; families</p>
+                        <h3>Join the waitlist</h3>
+                        <p>Tell us a little about who you're looking out for. We'll reach out when MySphere opens near you.</p>
+                        <span class="join-go" aria-hidden="true">→</span>
+                    </a>
+                    <a class="join-card join-card-butter reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSc-qizxFooj4OfGZgbGM8Fypb4QJnuCMsX4HYM6Ju5f_6hLnw/viewform?usp=preview" target="_blank" rel="noopener">
+                        <p class="join-tag">For companions</p>
+                        <h3>Become a companion</h3>
+                        <p>18 or older, patient, and good company? Apply in five minutes and we'll follow up personally.</p>
+                        <span class="join-go" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>MySphere</h3>
-                    <p>AI-powered companionship for meaningful connections</p>
-                    <div class="footer-contact">
-                        <p class="contact-label">Get in touch:</p>
-                        <a href="mailto:founders@mysphereai.com" class="footer-email">founders@mysphereai.com</a>
-                    </div>
+        <div class="wrap footer-grid">
+            <div>
+                <a href="index.html" class="brand brand-light">
+                    <span class="brand-mark" aria-hidden="true"></span>
+                    <span class="brand-name">MySphere</span>
+                </a>
+                <p class="footer-tag">Companionship for older adults, matched by voice.</p>
+            </div>
+            <div class="footer-cols">
+                <div>
+                    <p class="footer-h">Product</p>
+                    <a href="#how">How it works</a>
+                    <a href="#sonia">Sonia</a>
+                    <a href="#who">Who it's for</a>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="#opportunities">Get Involved</a>
-                    <a href="mailto:founders@mysphereai.com">Contact Us</a>
+                <div>
+                    <p class="footer-h">Company</p>
+                    <a href="#join">Get involved</a>
+                    <a href="mailto:founders@mysphereai.com">founders@mysphereai.com</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 MySphere. All rights reserved.</p>
-            </div>
+        </div>
+        <div class="wrap footer-bottom">
+            <p>© 2025 MySphere</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
